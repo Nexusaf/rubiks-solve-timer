@@ -1,0 +1,118 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.timer-container {
+  display: flex;
+  margin: 20px auto 0;
+  border: 1px solid gray;
+  border-radius: 4px;
+  justify-content: space-between;
+  width: 900px;
+  height: 500px;
+}
+
+/* Display times section */
+.recorded-times {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+}
+
+.recorded-times .recorded-times-title {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+.recorded-times #recordedTimes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  border-radius: 2px;
+  overflow-y: auto;
+  padding: 10px;
+  margin: 15px;
+  background-color: white;
+}
+
+
+/* Timer info section */
+.timer-info {
+  flex: 1;
+  background-color: rgb(230, 230, 230);
+}
+
+.timer-info .timer-title {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+.timer-info #timer {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Solve info section */
+.solve-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.solve-info .solve-info-title {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+#recordedTimes {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#recordedTimes li {
+  margin-bottom: 5px;
+}
+
+#averageTime {
+  font-size: 16px;
+  flex-grow: 1;
+  padding: 10px 20px;
+}
+
+#startButton, #resetButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#resetButton {
+  background-color: #9e9e9e; /* Red */
+}
+
+#startButton:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
